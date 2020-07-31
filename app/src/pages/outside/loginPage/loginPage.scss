@@ -56,8 +56,12 @@
   left: 0;
   width: 50%;
   height: 100%;
-  background-image: url(./img/login-page-bgc.svg);
-  background-color: $COLOR--light-blue;
+  // width: 140px;
+  // height: 23px;
+  //background-image: url(./img/new-logo.svg);
+  
+  // background-image: url(./img/login-page-bgc.svg);
+  //background-color: $COLOR--light-blue;
   background-repeat: no-repeat;
   background-size: 100%;
 
@@ -73,24 +77,24 @@
   }
 }
 .logo {
-  position: absolute;
-  top: 30px;
-  left: 60px;
+  // position: absolute;
+  // top: 30px;
+  // left: 60px;
   width: 140px;
   height: 23px;
-  background-image: url(./img/rp-logo.svg);
+  background-image: url(./img/new-logo.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   cursor: pointer;
-  z-index: 1;
+  z-index: 100;
 
-  @media (max-width: $SCREEN_SM_MAX) {
-    left: 50px;
-  }
-  @media (max-width: $SCREEN_XS_MAX) {
-    top: 15px;
-    left: 20px;
-    width: 100px;
-    height: 16px;
-  }
+  // @media (max-width: $SCREEN_SM_MAX) {
+  //   left: 50px;
+  // }
+  // @media (max-width: $SCREEN_XS_MAX) {
+  //   top: 15px;
+  //   left: 20px;
+  //   width: 100px;
+  //   height: 16px;
+  // }
 }
