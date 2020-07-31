@@ -1,0 +1,80 @@
+/*!
+ * Copyright 2019 EPAM Systems
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.link-issue-fields {
+  .issue-fields-list-item {
+    position: relative;
+    margin-bottom: 18px;
+  }
+}
+.field-wrapper {
+  width: 280px;
+  padding: 0;
+  margin: 0;
+  @media (max-width: $SCREEN_XS_MAX) {
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+.label {
+  width: 140px;
+  min-width: 182px;
+  padding-right: 30px;
+  font-size: 13px;
+  font-family: $FONT-REGULAR;
+  text-align: right;
+  @media (max-width: $SCREEN_XS_MAX) {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 0;
+    text-align: left;
+  }
+}
+
+.remove-issue-fields-button {
+  position: absolute;
+  right: -4px;
+  top: 25px;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+  transition: transform 200ms ease-in-out;
+  cursor: pointer;
+
+  svg {
+    fill: $COLOR--gray-60;
+  }
+  &:hover {
+    transform: scale(1.2);
+
+    svg {
+      fill: $COLOR--gray-47;
+    }
+  }
+
+  @media (max-width: $SCREEN_XS_MAX) {
+    right: -27px;
+    top: 56px;
+  }
+}
+
+.add-issue-button {
+  margin-left: 180px;
+  @media (max-width: $SCREEN_XS_MAX) {
+    margin-left: 0;
+  }
+}

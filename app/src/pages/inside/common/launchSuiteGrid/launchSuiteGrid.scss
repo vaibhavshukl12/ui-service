@@ -1,0 +1,75 @@
+/*!
+ * Copyright 2019 EPAM Systems
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.hamburger-col {
+  width: 2%;
+
+  @media (max-width: $SCREEN_SM_MAX) {
+    display: none;
+  }
+}
+.name-col {
+  width: 30%;
+
+  @media (max-width: $SCREEN_SM_MAX) {
+    width: 100%;
+  }
+}
+.start-time-col {
+  width: 10%;
+
+  @media (max-width: $SCREEN_SM_MAX) {
+    display: none;
+  }
+}
+.total-col,
+.passed-col,
+.failed-col,
+.skipped-col {
+  width: 6.5%;
+}
+.pb-col,
+.ab-col,
+.si-col {
+  width: 8%;
+}
+.ti-col {
+  width: 6%;
+}
+@media (max-width: $SCREEN_SM_MAX) {
+  .total-col,
+  .passed-col,
+  .failed-col,
+  .skipped-col,
+  .pb-col,
+  .ab-col,
+  .si-col,
+  .ti-col {
+    display: flex;
+    width: 25%;
+    height: 60px;
+    border: 1px solid $COLOR--gray-91;
+    padding: 0;
+  }
+}
+
+.select-col {
+  width: 2%;
+
+  @media (max-width: $SCREEN_SM_MAX) {
+    display: none;
+  }
+}

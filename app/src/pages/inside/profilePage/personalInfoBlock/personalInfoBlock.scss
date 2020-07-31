@@ -1,0 +1,70 @@
+/*!
+ * Copyright 2019 EPAM Systems
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.info {
+  width: 100%;
+  padding-left: 128px;
+  box-sizing: border-box;
+  display: inline-block;
+
+  @media (max-width: $SCREEN_XS_MAX) {
+    padding-left: 50px;
+  }
+}
+.personal-info-block {
+  position: relative;
+}
+.block-content {
+  position: relative;
+  width: 100%;
+  min-height: 160px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+
+  @media (max-width: $SCREEN_XS_MAX) {
+    min-height: 120px;
+  }
+}
+.avatar-wrapper {
+  position: absolute;
+  width: 110px;
+  height: 120px;
+  overflow: hidden;
+  background-color: $COLOR--white;
+
+  @media (max-width: $SCREEN_XS_MAX) {
+    width: 40px;
+    height: 55px;
+  }
+}
+.avatar {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  @media (max-width: $SCREEN_XS_MAX) {
+    display: none;
+  }
+}

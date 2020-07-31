@@ -1,0 +1,79 @@
+/*!
+ * Copyright 2019 EPAM Systems
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.defect-type-block {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 1px solid $COLOR--gray-80;
+  border-radius: 100px;
+  background-color: $COLOR--white;
+  font-family: $FONT-SEMIBOLD;
+  font-size: 13px;
+  line-height: 18px;
+}
+.circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px 0 7px;
+  border-radius: 100%;
+}
+.title {
+  display: inline-block;
+  color: $COLOR--charcoal-grey;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+.stats {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  right: -1px;
+  height: 20px;
+  box-sizing: border-box;
+  margin-left: 7px;
+  padding: 0 10px;
+  border: 1px solid;
+  border-radius: 100px;
+  background-color: $COLOR--white-two;
+  color: $COLOR--charcoal-grey;
+}
+
+.detailed-view {
+  .stats {
+    .value {
+      color: $COLOR--gray-80;
+      text-decoration: none;
+    }
+
+    .value-detailed {
+      text-decoration: none;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 12px;
+        margin: 0 5px;
+        vertical-align: middle;
+        background-color: $COLOR--gray-91;
+      }
+    }
+  }
+}

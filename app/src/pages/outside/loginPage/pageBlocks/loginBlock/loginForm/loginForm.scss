@@ -1,0 +1,136 @@
+/*!
+ * Copyright 2019 EPAM Systems
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.login-form {
+  width: 380px;
+  margin: auto;
+  font-family: $FONT-REGULAR;
+
+  @media (max-width: $SCREEN_XS_MAX) {
+    width: 100%;
+  }
+}
+.separator {
+  position: relative;
+  height: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+
+  @media (max-width: $SCREEN_SM_MAX) {
+    left: -115px;
+    width: 610px;
+  }
+
+  @media (max-width: $SCREEN_XS_MAX) {
+    left: 0;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 37px;
+  }
+}
+.line {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  border-top: 1px solid $COLOR--steel-grey;
+  opacity: 0.2;
+  width: 100%;
+}
+.or {
+  position: relative;
+  padding: 0 14px;
+  background: $COLOR--white-two;
+  display: inline-block;
+  border: none;
+  font-size: 15px;
+  text-align: center;
+  color: $COLOR--steel-grey;
+  box-sizing: border-box;
+}
+.login-field {
+  width: 380px;
+  height: 40px;
+  margin-bottom: 30px;
+
+  @media (max-width: $SCREEN_XS_MAX) {
+    width: 280px;
+  }
+}
+.password-field {
+  width: 380px;
+  height: 40px;
+  margin-bottom: 10px;
+
+  @media (max-width: $SCREEN_XS_MAX) {
+    width: 280px;
+  }
+}
+.forgot-pass {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 13px;
+  color: $COLOR--tealish;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.login-button-container {
+  width: 160px;
+  height: 40px;
+  margin: 0 auto 50px auto;
+
+  @media (max-width: $SCREEN_SM_MAX) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $SCREEN_XS_MAX) {
+    margin-bottom: 30px;
+  }
+}
+
+.attempts-exceeded-block {
+  display: flex;
+  margin-bottom: 20px;
+  color: $COLOR--charcoal-grey;
+  font-size: 12px;
+  font-family: $FONT-REGULAR;
+  line-height: 16px;
+
+  b {
+    font-family: $FONT-SEMIBOLD;
+  }
+
+  .warning {
+    display: inline-flex;
+    margin-right: 5px;
+    color: $COLOR--failed;
+  }
+
+  .warning-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+    svg {
+      fill: $COLOR--failed;
+    }
+  }
+}

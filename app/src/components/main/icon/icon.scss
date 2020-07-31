@@ -1,0 +1,99 @@
+/*!
+ * Copyright 2019 EPAM Systems
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.icon {
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-check {
+  background-image: url(./img/checkmark-icon-hover.svg);
+}
+
+.icon-pencil {
+  background-image: url(./img/pencil-icon.svg);
+  &:hover {
+    background-image: url(./img/pencil-icon-hover.svg);
+  }
+}
+
+.icon-delete {
+  background-image: url(./img/bin-icon.svg);
+  &:hover {
+    background-image: url(./img/bin-icon-hover.svg);
+  }
+}
+
+.icon-close {
+  background-image: url(./img/ic-close.svg);
+  &:hover {
+    background-image: url(./img/ic-close-hover.svg);
+  }
+}
+
+.icon-tables {
+  background-image: url(./img/draft-style-guide-tables-copy.svg);
+  &:hover {
+    background-image: url(./img/draft-style-guide-tables-copy-hover.svg);
+  }
+}
+
+.icon-planet {
+  background-image: url(./img/planet.svg);
+  &:hover {
+    background-image: url(./img/planet-hover.svg);
+  }
+}
+
+.icon-grid {
+  background-image: url(./img/grid.svg);
+  &:active {
+    background-image: url(./img/grid-active.svg);
+  }
+}
+
+.icon-table {
+  background-image: url(./img/table.svg);
+  &:active {
+    background-image: url(./img/table-active.svg);
+  }
+}
+
+.icon-statistics {
+  background-image: url(./img/stat.svg);
+  &:hover {
+    background-image: url(./img/stat-hover.svg);
+  }
+}
+
+.icon-linked {
+  background-image: url(./img/linked.svg);
+  background-position: left;
+}
+
+.icon-person {
+  background-image: url(./img/person.svg);
+  background-position: left;
+}
+
+.icon-internal {
+  background-image: url(./img/internal.svg);
+  background-position: left;
+}

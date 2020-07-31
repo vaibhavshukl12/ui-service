@@ -1,0 +1,75 @@
+/*!
+ * Copyright 2019 EPAM Systems
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.personal-info {
+  display: flex;
+  width: 100%;
+}
+
+.avatar-wrapper {
+  margin-right: 15px;
+  @media (max-width: $SCREEN_XS_MAX) {
+    margin-top: 4px;
+  }
+}
+
+.member-info {
+  font-size: 13px;
+  @media (max-width: $SCREEN_XS_MAX) {
+    margin-top: 7px;
+  }
+}
+.member-name-wrap {
+  display: flex;
+  align-items: flex-end;
+  white-space: nowrap;
+}
+.member-name,
+.member-login {
+  max-width: 250px;
+  color: $COLOR--charcoal-grey;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.member-name {
+  display: inline-block;
+}
+.member-login {
+  margin-top: 10px;
+  font-family: $FONT-SEMIBOLD;
+}
+.member-you,
+.member-admin {
+  margin-left: 5px;
+  padding: 0 6px 2px;
+  border-radius: 100px;
+  font-size: 10px;
+  color: $COLOR--white-two;
+  line-height: 13px;
+  font-family: $FONT-SEMIBOLD;
+  text-transform: lowercase;
+  letter-spacing: 0.6px;
+}
+.member-you {
+  background: $COLOR--dark-pastel-green;
+}
+.member-admin {
+  background: $COLOR--orange-red;
+}
+.hide {
+  display: none;
+}

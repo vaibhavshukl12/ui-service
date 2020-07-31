@@ -1,0 +1,83 @@
+/*!
+ * Copyright 2019 EPAM Systems
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.cumulative-trend-chart-legend {
+  padding-top: 20px;
+}
+
+.legend-first-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-height: 22px;
+}
+
+.legend-second-row {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 40px;
+  max-height: 22px;
+}
+
+.controls {
+  display: flex;
+  min-width: 400px;
+
+  @media (max-width: $SCREEN_SM_MAX) {
+    display: none;
+  }
+}
+
+.control {
+  margin-left: 20px;
+
+  span {
+    font-size: 11px;
+  }
+}
+
+.separate {
+  background-image: url(~common/img/toggle-stacked.svg);
+  background-position-y: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  input,
+  label {
+    opacity: 0;
+  }
+}
+.separate-active {
+  background-image: url(~common/img/toggle_separated.svg);
+}
+
+.percentage {
+  background-image: url(~common/img/toggle-absolute.svg);
+  background-position-y: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-left: 10px;
+
+  input,
+  label {
+    opacity: 0;
+  }
+}
+
+.percentage-active {
+  background-image: url(~common/img/toggle_percentage.svg);
+}

@@ -1,0 +1,100 @@
+/*!
+ * Copyright 2019 EPAM Systems
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.socials-block {
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.social-link {
+  // display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 33px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+
+  @media (max-width: $SCREEN_SM_MAX) {
+    margin-right: 60px;
+  }
+
+  // &.gh-icon {
+  //   background-image: url(./img/socialGh.svg);
+  //   &:hover {
+  //     background-image: url(./img/socialGh-hv.svg);
+  //   }
+  //   &:active {
+  //     background-image: url(./img/socialGh-act.svg);
+  //   }
+  // }
+  // &.fb-icon {
+  //   background-image: url(./img/social-cuk.svg);
+  //   &:hover {
+  //     background-image: url(./img/social-cuk-hv.svg);
+  //   }
+  //   &:active {
+  //     background-image: url(./img/social-cuk-act.svg);
+  //   }
+  // }
+  // &.tw-icon {
+  //   background-image: url(./img/socialTw.svg);
+  //   &:hover {
+  //     background-image: url(./img/socialTw-hv.svg);
+  //   }
+  //   &:active {
+  //     background-image: url(./img/socialTw-act.svg);
+  //   }
+  // }
+  // &.vk-icon {
+  //   background-image: url(./img/socialVk.svg);
+  //   &:hover {
+  //     background-image: url(./img/socialVk-hv.svg);
+  //   }
+  //   &:active {
+  //     background-image: url(./img/socialVk-act.svg);
+  //   }
+  // }
+  // &.yt-icon {
+  //   background-image: url(./img/socialYt.svg);
+  //   &:hover {
+  //     background-image: url(./img/socialYt-hv.svg);
+  //   }
+  //   &:active {
+  //     background-image: url(./img/socialYt-act.svg);
+  //   }
+  // }
+  // &.slk-icon {
+  //   background-image: url(./img/socialSl.svg);
+  //   &:hover {
+  //     background-image: url(./img/socialSl-hv.svg);
+  //   }
+  //   &:active {
+  //     background-image: url(./img/socialSl-act.svg);
+  //   }
+  // }
+  // &.mail-icon {
+  //   background-image: url(./img/socialMl.svg);
+  //   &:hover {
+  //     background-image: url(./img/socialMl-hv.svg);
+  //   }
+  //   &:active {
+  //     background-image: url(./img/socialMl-act.svg);
+  //   }
+  //   margin-right: 0;
+  // }
+}

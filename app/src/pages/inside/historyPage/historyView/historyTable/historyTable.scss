@@ -1,0 +1,91 @@
+/*!
+ * Copyright 2019 EPAM Systems
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.history-table {
+  border-collapse: unset;
+}
+
+.spinner-wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.load-more-container {
+  margin-top: 15px;
+  padding: 0 15px;
+}
+
+.load-more {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  border: 2px dashed $COLOR--gray-91;
+  outline: none;
+  cursor: pointer;
+  background: inherit;
+  color: $COLOR--gray-47;
+  &:hover,
+  &:focus {
+    background-color: inherit;
+    color: $COLOR--charcoal-grey;
+  }
+  &:active {
+    background-color: inherit;
+    border: 2px dashed $COLOR--gray-60;
+    color: $COLOR--charcoal-grey;
+  }
+}
+
+.load-more-title {
+  margin: 5px 0;
+  font-size: 24px;
+  font-family: $FONT-REGULAR;
+}
+
+.history-grid-name {
+  border-right: 1px solid $COLOR--gray-91;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.filter-cell-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-name {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.compare-icon {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+
+  g {
+    fill: $COLOR--topaz;
+  }
+}

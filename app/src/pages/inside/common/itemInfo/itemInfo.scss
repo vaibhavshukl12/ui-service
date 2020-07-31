@@ -1,0 +1,197 @@
+/*!
+ * Copyright 2019 EPAM Systems
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.item-info {
+  overflow: hidden;
+
+  &:hover {
+    .edit-icon {
+      visibility: visible;
+    }
+  }
+}
+.main-info {
+  display: inline-block;
+  max-width: calc(30vw);
+  min-height: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  word-break: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  @supports (word-break: break-word) {
+    word-break: break-word;
+  }
+
+  @media (max-width: $SCREEN_SM_MAX) {
+    max-width: 100%;
+  }
+
+  @media (min-width: $SCREEN_XL_MAX) {
+    max-width: 432px;
+  }
+}
+.name-link {
+  padding-right: 5px;
+  font-family: $FONT-SEMIBOLD;
+  font-size: 14px;
+  color: $COLOR--windows-blue;
+  text-decoration: none;
+
+  @media (max-width: $SCREEN_SM_MAX) {
+    font-size: 16px;
+  }
+}
+.name {
+  display: inline;
+}
+.edit-number-box {
+  white-space: nowrap;
+}
+.number {
+  margin-right: 5px;
+  white-space: nowrap;
+}
+
+.item-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  margin-right: 5px;
+  border-radius: 100px;
+  color: $COLOR--white-two;
+  font-size: 10px;
+  font-family: $FONT-SEMIBOLD;
+
+  &:nth-last-child(2) {
+    margin-right: 0;
+  }
+
+  &.auto-analysis {
+    background-color: $COLOR--orange-red;
+    animation: auto-analyze-blink 1s linear reverse infinite;
+  }
+
+  &.pattern-analysis {
+    background-color: $COLOR--dark-pastel-green;
+    animation: auto-analyze-blink 1s linear reverse infinite;
+  }
+
+  &.rerun {
+    background-color: $COLOR--booger;
+  }
+}
+.edit-icon {
+  display: inline-block;
+  visibility: hidden;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  vertical-align: top;
+  fill: $COLOR--gray-60;
+  cursor: pointer;
+
+  &:hover {
+    fill: $COLOR--black-2;
+  }
+}
+.mobile-start-time {
+  display: none;
+  margin-right: 15px;
+  font-family: $FONT-REGULAR;
+  font-size: 15px;
+  color: $COLOR--charcoal-grey;
+
+  @media (max-width: $SCREEN_SM_MAX) {
+    display: inline;
+  }
+
+  &::before {
+    content: '|';
+    margin-right: 15px;
+    vertical-align: top;
+  }
+}
+.additional-info {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.duration-block {
+  margin-right: 20px;
+
+  @media (max-width: $SCREEN_SM_MAX) {
+    margin-right: 15px;
+  }
+}
+.item-description {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+.mobile-info {
+  display: none;
+  color: $COLOR--charcoal-grey;
+  font-size: 15px;
+  padding-top: 15px;
+
+  @media (max-width: $SCREEN_SM_MAX) {
+    display: block;
+  }
+
+  .mobile-status {
+    text-transform: uppercase;
+
+    &::before {
+      content: '|';
+      margin-right: 15px;
+      margin-left: 15px;
+      vertical-align: top;
+    }
+  }
+}
+
+.retry-icon {
+  display: inline-block;
+  height: 15px;
+  width: 18px;
+  padding-right: 20px;
+}
+
+.retries {
+  display: inline-block;
+}
+
+.retries-counter {
+  display: inline-block;
+}
+
+.sauce-labs-label {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+@keyframes auto-analyze-blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

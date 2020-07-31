@@ -1,0 +1,146 @@
+/*!
+ * Copyright 2019 EPAM Systems
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.navigation-tabs {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 15px 15px 15px;
+  background-color: $COLOR--white-two;
+  @media (max-width: $SCREEN_XS_MAX) {
+    padding-top: 15px;
+  }
+}
+.tabs-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 15px;
+  border-bottom: 1px solid $COLOR--gray-91;
+  text-align: center;
+  @media (max-width: $SCREEN_XS_MAX) {
+    display: none;
+  }
+}
+.tab {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  box-sizing: border-box;
+  height: 30px;
+  padding: 0 15px 5px 15px;
+  font-family: $FONT-CONDBOLD;
+  font-size: 16px;
+  line-height: 23px;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: $COLOR--gray-47;
+  text-decoration: none;
+}
+.active-tab {
+  color: $COLOR--topaz;
+  &:before {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 2px;
+    background: $COLOR--topaz;
+    content: '';
+  }
+  &:after {
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    display: block;
+    border: 5px solid transparent;
+    border-top-color: $COLOR--topaz;
+    margin-left: -3px;
+    content: '';
+  }
+}
+.content-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px 0 40px 0;
+}
+.custom-content-wrapper {
+  @media (max-width: $SCREEN_XS_MAX) {
+    padding-top: 10px;
+  }
+}
+
+.panel-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  min-height: 36px;
+  border-bottom: 1px solid $COLOR--gray-91;
+  @media (max-width: $SCREEN_XS_MAX) {
+    display: none;
+  }
+}
+.custom-tabs-wrapper {
+  width: auto;
+  padding-top: 25px;
+  text-align: left;
+  border-bottom: none;
+
+  .tab {
+    height: 42px;
+  }
+}
+.mobile-disabled {
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 45px;
+    @media (max-width: $SCREEN_XS_MAX) {
+      display: block;
+    }
+  }
+}
+
+.tabs-mobile {
+  display: none;
+  @media (max-width: $SCREEN_XS_MAX) {
+    display: block;
+  }
+}
+.custom-tabs-mobile-wrapper {
+  @media (max-width: $SCREEN_XS_MAX) {
+    display: none;
+  }
+}
+.link {
+  color: $COLOR--charcoal-grey;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.active-link {
+  color: $COLOR--topaz;
+  font-family: $FONT-CONDBOLD;
+  font-size: 16px;
+}

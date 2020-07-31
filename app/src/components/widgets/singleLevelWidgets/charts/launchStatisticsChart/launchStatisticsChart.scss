@@ -1,0 +1,162 @@
+/*!
+ * Copyright 2019 EPAM Systems
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.launch-statistics-chart {
+  :global {
+    .c3-shape {
+      &.c3-bar {
+        stroke-width: 0 !important;
+      }
+    }
+
+    svg {
+      .c3-xgrid-focus {
+        display: none;
+      }
+      .c3-grid {
+        line {
+          stroke: $COLOR--gray-80;
+          stroke-dasharray: none;
+        }
+      }
+      .c3-axis {
+        .tick {
+          font-size: 10px;
+          font-family: $FONT-REGULAR;
+          fill: $COLOR--black-2;
+        }
+        line {
+          stroke: $COLOR--black-2;
+        }
+        &.c3-axis-y {
+          display: none;
+
+          @media print {
+            display: inline;
+            .domain {
+              stroke: $COLOR--gray-80 !important;
+              display: inline !important;
+            }
+          }
+
+          .domain {
+            display: none;
+          }
+          .tick {
+            line {
+              stroke: $COLOR--gray-80;
+            }
+          }
+        }
+        &.c3-axis-x {
+          .domain {
+            display: block;
+            stroke: $COLOR--gray-80;
+          }
+        }
+      }
+      .c3-brush {
+        .background {
+          cursor: crosshair !important;
+        }
+        .extent {
+          cursor: ew-resize !important;
+        }
+        .resize {
+          cursor: col-resize !important;
+        }
+      }
+    }
+  }
+}
+
+.preview {
+  :global {
+    svg {
+      .c3-chart {
+        .c3-chart-line {
+          .c3-areas {
+            .c3-area {
+              pointer-events: none !important;
+            }
+          }
+        }
+        .c3-chart-bars {
+          .c3-chart-bar {
+            pointer-events: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.area-view {
+  :global {
+    svg {
+      .c3-chart {
+        .c3-chart-line {
+          .c3-lines {
+            display: none;
+          }
+          .c3-areas {
+            .c3-area {
+              pointer-events: auto;
+              opacity: 1;
+              cursor: pointer;
+
+              &:hover {
+                opacity: 0.8 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.time-line {
+  :global {
+    svg {
+      .c3-axis {
+        line {
+          stroke: none;
+        }
+      }
+    }
+  }
+}
+
+.full-screen {
+  :global {
+    svg {
+      .c3-grid {
+        line {
+          display: inline !important;
+        }
+      }
+      .c3-axis-y {
+        display: inline !important;
+
+        .domain {
+          display: inline !important;
+          stroke: $COLOR--gray-80 !important;
+        }
+      }
+    }
+  }
+}

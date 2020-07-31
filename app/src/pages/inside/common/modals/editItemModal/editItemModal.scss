@@ -1,0 +1,68 @@
+/*!
+ * Copyright 2019 EPAM Systems
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.item-name {
+  overflow: hidden;
+  color: $COLOR--charcoal-grey;
+  font-size: 14px;
+  font-family: $FONT-SEMIBOLD;
+  text-overflow: ellipsis;
+}
+
+.item-uuid {
+  color: $COLOR--black-2;
+  font-family: $FONT-REGULAR;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.label {
+  font-family: $FONT-REGULAR;
+  font-size: 13px;
+  line-height: 1.2;
+  color: $COLOR--charcoal-grey;
+  padding-bottom: 10px;
+}
+
+.code-ref {
+  display: flex;
+  justify-content: flex-start;
+  white-space: pre-line;
+  word-break: break-all;
+
+  @supports (word-break: break-word) {
+    word-break: break-word;
+  }
+  padding-right: 10px;
+}
+
+.copy {
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 16px;
+  width: 16px;
+  margin-left: 10px;
+  padding: 0;
+  outline: none;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  vertical-align: middle;
+  stroke: $COLOR--gray-60;
+  &:hover {
+    stroke: $COLOR--black-2;
+  }
+}
