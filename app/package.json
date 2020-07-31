@@ -1,5 +1,6 @@
 {
-  "name": "@report-portal/service-ui",
+  // "name": "@report-portal/service-ui",
+  "name": "@vaibhavshukl12/service-ui",
   "private": true,
   "version": "0.0.0",
   "license": "Apache-2.0",
